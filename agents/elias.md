@@ -21,7 +21,6 @@ permission:
     "task.md": allow
     "docs/**": allow
     "AGENTS.md": allow
-    ".config/opencode/**": allow
     ".opencode/**": allow
 
   bash:
@@ -39,7 +38,9 @@ permission:
     "head *": allow
     "tail *": allow
     "echo *": allow
-
+    "mkdir *": allow
+    "sed *": allow
+    
   webfetch: ask
   websearch: ask
   codesearch: ask

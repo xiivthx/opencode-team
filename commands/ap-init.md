@@ -45,7 +45,7 @@ Do NOT create extra meta-docs unless needed.
 
 ### 3) Add repo-safe defaults (only if missing)
 - `.gitignore` (minimal, do not break existing style)
-- `pre-commit-config.yaml` (hooks) and !`prek install` (if missing)
+- `.pre-commit-config.yaml` (hooks) and !`prek install` (if missing)
 - If a formatter/linter is already configured but undocumented, document it in AGENTS.md.
 
 ### 4) Output contract
@@ -56,7 +56,7 @@ End with:
 - Next best command (exact one-liner, usually `/ap-spec ...` or `/ap-plan ...`)
 
 
-### Example pre-commit-config.yaml
+### Example .pre-commit-config.yaml
 ```yaml
 # Optimized for prek (https://github.com/j178/prek)
 # prek is a fast, dependency-free Rust-based pre-commit alternative.
