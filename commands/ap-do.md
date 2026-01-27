@@ -61,7 +61,7 @@ If a subagent disagrees, resolve via evidence:
 - ask for a minimal reproduction / spike
 - do not decide by opinion
 
-## 3) Git hygiene (if git exists)
+## 3) Git hygiene
 - Keep commits 1–3 max.
 - Commit messages must include PRIMARY-ID and follow git-workflow.
 - Working tree should be clean at end (or explain why not).
@@ -79,4 +79,4 @@ You may only say “DONE” if:
 - 🧠 Key decisions + why (short)
 - 🛡️ Security/deps notes (if any)
 - 🚧 Remaining risks / TODOs (if any)
-- Next command (one line): usually `/ap-review` or `/ap-status`
+- Execute now (one line): usually `/ap-review` or `/ap-status`. **You must run this command.**

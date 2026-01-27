@@ -23,4 +23,4 @@ Git: !`(git rev-parse --is-inside-work-tree >/dev/null 2>&1 && git status -sb) |
 - Task id + status (done/blocked)
 - Files changed
 - Commands run
-- Next suggested command (one line)
+- Execute now (one line, actually calling the tool)

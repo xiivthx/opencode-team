@@ -41,4 +41,4 @@ Diff:
 - Top 5 issues (most important first)
 - Minimal patch suggestions (concrete)
 - Follow-up tests recommended
-- Next command (one line): `/ap-do ...` or `/ap-fix ...` or `/ap-release ...`
+- Execute now (one line): `/ap-do ...` or `/ap-fix ...` or `/ap-release ...`. **You must run this command.**

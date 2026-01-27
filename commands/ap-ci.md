@@ -37,4 +37,4 @@ Devcontainer hints: !`(find .devcontainer -maxdepth 2 -type f 2>/dev/null | sed 
 - ✅ Files changed
 - 🧪 Verification commands (local + CI expectations)
 - ⚠️ Risks
-- Next command (one line)
+- Execute now (one line, auto-run if safe)

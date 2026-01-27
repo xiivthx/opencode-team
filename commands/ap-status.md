@@ -20,7 +20,7 @@ ADRs: !`ls -1 docs/adr 2>/dev/null | tail -n 10 || echo "no docs/adr"`
 ## Blockers
 - bullets (or "None")
 
-## Next best action (choose ONE)
+## Execute now (choose ONE and run it)
 - what
 - why
 - exact command (one line)

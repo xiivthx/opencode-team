@@ -32,3 +32,6 @@ Diff summary: !`(git rev-parse --is-inside-work-tree >/dev/null 2>&1 && git diff
 - Tagging/publishing steps (written, not executed)
 - Rollback plan
 - Post-release verification
+
+# Execute now
+(The one-liner command to proceed - run it)

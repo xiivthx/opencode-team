@@ -34,4 +34,4 @@ Choose one:
 - Evidence collected (commands + key excerpts)
 - Actions taken (if any)
 - Verification
-- Next steps
+- Execute now (run the command)

@@ -46,4 +46,4 @@ Create/Update: `docs/adr/<ADR-ID>-<slug>.md`
 ## Output contract (in chat)
 - ADR file path
 - “Decision in one sentence”
-- “Next command” one-liner: usually `/ap-plan <ADR-ID> ...`
+- “Execute now” one-liner: usually `/ap-plan <ADR-ID> ...` (Must include call to `run_command`)

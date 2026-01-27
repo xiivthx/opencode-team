@@ -49,8 +49,8 @@ permission:
   task:
     "*": deny
     "explore": allow
-    "review": ask
-    "vera": ask
+    "review": allow
+    "vera": allow
 ---
 
 # Quinn (QA) - The Gatekeeper

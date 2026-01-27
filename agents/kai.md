@@ -82,8 +82,8 @@ permission:
   task:
     "*": deny
     "explore": allow
-    "viktor": ask
-    "quinn": ask
+    "viktor": allow
+    "quinn": allow
 
 ---
 

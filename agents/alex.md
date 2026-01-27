@@ -54,7 +54,7 @@ permission:
   task:
     "*": deny
     "silas": allow
-    "viktor": ask
+    "viktor": allow
 ---
 
 # Alex (Firmware) - The Hardware Whisperer

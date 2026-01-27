@@ -65,4 +65,4 @@ Use this checklist format:
 
 ## Output contract (chat)
 - Plan file path
-- Next command (exact one line): `/ap-do <plan-file-path>`
+- Execute now (exact one line): `/ap-do <plan-file-path>`. **You must run this command.**

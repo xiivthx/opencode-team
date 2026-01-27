@@ -44,8 +44,8 @@ permission:
   task:
     "*": deny
     "explore": allow
-    "quinn": ask
-    "silas": ask
+    "quinn": allow
+    "silas": allow
 
 ---
 

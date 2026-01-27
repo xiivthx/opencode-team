@@ -53,7 +53,7 @@ End with:
 - ✅ Files created/updated (1-line purpose each)
 - 🧪 Copy/paste verification commands (what you actually ran OR what user should run)
 - ⚠️ Unknowns / assumptions
-- Next best command (exact one-liner, usually `/ap-spec ...` or `/ap-plan ...`)
+- Execute now (exact one-liner, usually `/ap-spec ...` or `/ap-plan ...`). **You must run this command.**
 
 
 ### Example .pre-commit-config.yaml

@@ -51,6 +51,6 @@ Create/Update: `docs/specs/<AC-ID>-<slug>.md`
 ## Output contract (in chat)
 - Spec file path
 - 3-7 bullet “What changed / what is decided”
-- “Next command” one-liner:
+- “Execute now” one-liner (Use `run_command` behavior):
   - `/ap-adr ...` if architecture changes
   - else `/ap-plan <AC-ID> ...`
