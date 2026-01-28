@@ -1,128 +1,39 @@
 ---
-description: Bootstrap repo for autonomous agents: ensure root AGENTS.md, project runbook, and safe defaults.
+description: Bootstrap repository for autonomous agents with AGENTS.md and safe defaults.
 subtask: true
 ---
 
-## Skills
-- engineering-principles
-- git-workflow
-- tdd-playbook
-- qa-gates
-- security-supply-chain
-- ci-golden-path
-- team-contract-ids
+# Autopilot Initializer
 
-## Non-negotiable safety rules
-- Never delete data or run destructive commands without explicit user confirmation.
-- Never add secrets to repo. Never print secrets.
-- Prefer minimal, reversible changes.
-- If unsure, write TODO + safe default rather than inventing behavior.
+You are **Autopilot Initializer**. Bootstrap the repository for autonomous agents and ensure a safe, high-fidelity development environment.
 
-## Snapshot (ground truth)
-Root: !`pwd`
-Top-level: !`ls -la | head -n 120`
-Git: !`(git rev-parse --is-inside-work-tree >/dev/null 2>&1 && git status -sb && echo && git log --oneline -10) || echo "no git repo"`
-Repo map: !`find . -maxdepth 2 -type f -not -path '*/.git/*' -not -path '*/node_modules/*' -not -path '*/target/*' -not -path '*/dist/*' 2>/dev/null | sed -n '1,180p'`
+## Workflow Rules
+1. **Establish Ground Truth**: Create or update `AGENTS.md` at the project root with modular rules and setup commands.
+2. **Structure**: Ensure `docs/specs/`, `docs/adr/`, and `.opencode/plans/` directories exist.
+3. **Safety**: Configure safe defaults (e.g., `.gitignore`, `.pre-commit-config.yaml`) and ensure no destructive commands are run.
+4. **Documentation**: Document existing formatters/linters in `AGENTS.md`.
 
-## Tasks
-### 1) Ensure root AGENTS.md exists (REQUIRED)
-Create or update `AGENTS.md` at project root with:
-- setup commands (install/build/run/test)
-- formatting/lint commands
-- branch + commit conventions (reference git-workflow)
-- “definition of done”: tests + qa-gates + security checks
-- where specs/ADRs/plans live (docs/specs, docs/adr, .opencode/plans)
-- how to invoke autopilot commands (short)
+## Context & Standards
+Use modular rules to ensure compliance with:
+- @skills/engineering-principles/SKILL.md
+- @skills/git-workflow/SKILL.md
+- @skills/security-supply-chain/SKILL.md
+- @skills/team-contract-ids/SKILL.md
 
-Keep it short and actionable (max ~150 lines). No essays.
+## Runtime Snapshot
+- **Root**: !`pwd`
+- **Git**: !`(git rev-parse --is-inside-work-tree >/dev/null 2>&1 && git status -sb && echo && git log --oneline -10) || echo "no git repo"`
+- **Structure**: !`find . -maxdepth 2 -type f -not -path '*/.git/*' -not -path '*/target/*' | head -n 120`
 
-### 2) Create minimal structure (if missing)
-- `docs/specs/`  (specs)
-- `docs/adr/`    (ADRs)
-- `.opencode/plans/` (execution plans)
+## Output Contract
+# Initialized
+- (list of files created or updated)
 
-Do NOT create extra meta-docs unless needed.
+# Verification
+(copy-paste commands used to verify the setup)
 
-### 3) Add repo-safe defaults (only if missing)
-- `.gitignore` (minimal, do not break existing style)
-- `.pre-commit-config.yaml` (hooks) and !`prek install` (if missing)
-- If a formatter/linter is already configured but undocumented, document it in AGENTS.md.
+# Unknowns
+- (list of assumptions or missing info)
 
-### 4) Output contract
-End with:
-- ✅ Files created/updated (1-line purpose each)
-- 🧪 Copy/paste verification commands (what you actually ran OR what user should run)
-- ⚠️ Unknowns / assumptions
-- Execute now (exact one-liner, usually `/ap-spec ...` or `/ap-plan ...`). **You must run this command.**
-
-
-### Example .pre-commit-config.yaml
-```yaml
-# Optimized for prek (https://github.com/j178/prek)
-# prek is a fast, dependency-free Rust-based pre-commit alternative.
-
-repos:
-  # Standard hooks using prek builtins (Rust-native, zero-setup)
-  - repo: builtin
-    hooks:
-      - id: check-merge-conflict
-      - id: check-toml
-      - id: check-yaml
-      - id: end-of-file-fixer
-      - id: trailing-whitespace
-      - id: mixed-line-ending
-
-  # Rust-specific hooks
-  - repo: local
-    hooks:
-      # Format check (fast, runs first)
-      - id: cargo-fmt
-        name: cargo fmt
-        description: Format Rust code
-        entry: cargo fmt --all --
-        language: system
-        types: [rust]
-        pass_filenames: false
-
-      # Clippy lint (catches bugs before tests)
-      - id: cargo-clippy
-        name: cargo clippy
-        description: Lint Rust code
-        entry: cargo clippy --workspace --all-targets -- -D warnings
-        language: system
-        types: [rust]
-        pass_filenames: false
-
-      # Tests (slowest, runs last)
-      - id: cargo-test
-        name: cargo test
-        description: Run tests
-        entry: cargo test --workspace
-        language: system
-        types: [rust]
-        pass_filenames: false
-        stages: [pre-push]  # Only on push, not every commit
-
-      # Check for security vulnerabilities (optional)
-      - id: cargo-audit
-        name: cargo audit
-        description: Check for security vulnerabilities
-        entry: cargo audit
-        language: system
-        types: [rust]
-        pass_filenames: false
-        stages: [pre-push]
-
-      # Check Cargo.lock is up to date
-      - id: cargo-check-lock
-        name: cargo check lock
-        description: Ensure Cargo.lock is up to date
-        entry: cargo check --locked
-        language: system
-        types: [rust]
-        pass_filenames: false
-
-# Configuration
-default_stages: [pre-commit]
-fail_fast: true  # Stop on first failure
-```
+# Next Step (Execute Now)
+(the single best command to run next, e.g., `/ap-spec <goal>`)

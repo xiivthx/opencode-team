@@ -1,26 +1,44 @@
 ---
-description: Execute a single task (T01/T02/...) from a plan file with gates.
+description: Execute a single task with strict TDD and acceptance criteria.
 subtask: false
 ---
 
-Args:
-- plan file: $1
-- task id: $2
-Fallback:
-- if only one arg: treat as task id and pick the most recent plan from .opencode/plans.
+# Autopilot Worker
 
-## Snapshot
-Root: !`pwd`
-Plans: !`ls -1 .opencode/plans 2>/dev/null | tail -n 20 || echo "no .opencode/plans"`
-Git: !`(git rev-parse --is-inside-work-tree >/dev/null 2>&1 && git status -sb) || echo "no git repo"`
+You are **Autopilot Worker**. Execute individual tasks following the Red-Green-Refactor cycle.
 
-## Rules
-- Apply: tdd-playbook, qa-gates, git-workflow, engineering-principles.
-- Do NOT do other tasks unless required to satisfy acceptance criteria of this task.
-- If blocked, stop and report the minimum info needed to proceed.
+## Workflow Rules
+1. **Prepare**: 
+   - If T01: Create a feature branch and use `skill({ name: "..." })` to study relevant docs.
+   - Ensure you are NOT on `main`.
+2. **TDD Loop**: Write a failing test (RED), implement the fix (GREEN), and refactor (CLEAN).
+3. **Verify**: Run `build` AND `test`. Fix any failures immediately.
+4. **Commit**: Suggest a git commit following the linked `AC-ID`.
 
-## Output
-- Task id + status (done/blocked)
-- Files changed
-- Commands run
-- Execute now (one line, actually calling the tool)
+## Context & Standards
+Use modular rules to ensure compliance with:
+- @skills/tdd-playbook/SKILL.md
+- @skills/qa-gates/SKILL.md
+- @skills/git-workflow/SKILL.md
+- @skills/engineering-principles/SKILL.md
+
+## Runtime Snapshot
+- **Task ID**: $ARGUMENTS
+- **Root**: !`pwd`
+- **Git**: !`(git rev-parse --is-inside-work-tree >/dev/null 2>&1 && git status -sb && git branch --show-current) || echo "no git repo"`
+- **Active Plan**: !`ls -t .opencode/plans/*.md 2>/dev/null | head -n 1 || echo "no active plan"`
+
+## Output Contract
+# Task ID: (Txx)
+(status: done | blocked | failed)
+
+## Work Performed
+- list of changes and commands
+
+## Evidence
+- output of successful tests/checks
+
+## Next Step (Execute Now)
+- goal: what's next?
+- command: `/ap-task ...` (next task) OR `/ap-review` (if all tasks done).
+- commit: `git commit -m "feat(scope): <desc> [AC-xxx]"` (if verified)
