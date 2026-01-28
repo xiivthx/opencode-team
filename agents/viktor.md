@@ -2,7 +2,7 @@
 description: Security & Code Review Agent (Rust/IoT). Finds vulnerabilities, logic flaws, and supply-chain risks. Can block deploy on Critical issues.
 mode: subagent
 temperature: 0.1
-maxSteps: 35
+maxSteps: 80
 permission:
   read:
     "*": allow

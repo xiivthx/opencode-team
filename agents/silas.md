@@ -2,7 +2,7 @@
 description: System Architect (Rust/IoT Focus). Produces technical designs, Crate structures, and Rust Traits/Types.
 mode: subagent
 temperature: 0.2
-maxSteps: 25
+maxSteps: 60
 permission:
   read:
     "*": allow

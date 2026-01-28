@@ -64,8 +64,8 @@ This ordering minimizes wasted compute and provides fast feedback.
 - Lint: `cargo clippy -- -D warnings`
 
 ## Stage B — Tests (correctness)
-- `cargo test` (workspace-aware)
-- If available and approved, prefer nextest for speed (but keep determinism).
+- `cargo nextest run` (workspace-aware). Preferred for speed and parallel execution.
+- Fallback: `cargo test` if `nextest` is unavailable or for specific doctests.
 
 ## Stage C — Security gates (policy)
 - Run dependency checks (coordinate with `security-supply-chain`):
@@ -183,7 +183,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Toolchain install (pin version in your repo policy)
+      # Toolchain install (MUST use stable 1.85+ for Rust 2024 support)
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
 

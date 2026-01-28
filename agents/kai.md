@@ -2,7 +2,7 @@
 description: DevOps & Infrastructure Engineer. Rust CI/CD (caching/cross-compilation), Docker, Kubernetes, IaC (Terraform). Builds a secure, fast “golden path” to prod.
 mode: subagent
 temperature: 0.2
-maxSteps: 40
+maxSteps: 80
 permission:
   read:
     "*": allow

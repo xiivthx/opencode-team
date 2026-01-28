@@ -220,6 +220,36 @@ Never log:
 
 ---
 
+# Rust 2024 Edition & Approved Tooling
+All new crates and modules MUST target **Rust 2024 Edition**.
+
+## Approved/Recommended Crate Inventory
+
+| Crate | Category | Description | Reference |
+|-------|----------|-------------|-----------|
+| `bon` | Patterns | Builder pattern for structs and functions | [Details](https://docs.rs/bon) |
+| `bytemuck` | Parsing | Zero-copy casting (T <-> &[u8]) | [Details](https://docs.rs/bytemuck) |
+| `chumsky` | Parsing | Parser combinators with error recovery | [Details](https://docs.rs/chumsky) |
+| `darling` | Macros | Attribute parsing for proc-macros | [Details](https://docs.rs/darling) |
+| `inventory` | Macros | Register items at compile time | [Details](https://docs.rs/inventory) |
+| `dotenvy` | Config | Environment variables from .env | [Details](https://docs.rs/dotenvy) |
+| `embassy` | Embedded | Modern embedded framework and async-await | [Details](https://docs.rs/embassy) |
+| `hexplay` | Debug | Hex dump with syntax highlighting | [Details](https://docs.rs/hexplay) |
+| `lock-api` | Sync | Lock-free synchronization | [Details](https://docs.rs/lock-api) |
+| `mlua` | Language | Lua binding for Rust | [Details](https://docs.rs/mlua) |
+| `v8` | Runtime | JavaScript engine bindings | [Details](https://docs.rs/v8) |
+| `wgpu` | Graphics | WebGPU binding for Rust | [Details](https://docs.rs/wgpu) |
+| `dioxus` | GUI | Fullstack web/desktop/mobile framework | [Details](https://docs.rs/dioxus) |
+| `papaya` | Data Structures | Fast/ergonomic concurrent hash-table | [Details](https://docs.rs/papaya) |
+| `schemars` | Data Structures | Schema generation for Serde | [Details](https://docs.rs/schemars) |
+| `strum` | Data Structures | Enum-based combinatorial generation | [Details](https://docs.rs/strum) |
+| `tarpc` | Network | RPC framework | [Details](https://docs.rs/tarpc) |
+| `hickory-dns` | Network | DNS client and server | [Details](https://docs.rs/hickory-dns) |
+| `testcontainers` | Testing | Containerized testing | [Details](https://docs.rs/testcontainers) |
+| `utoipa` | Testing | OpenAPI documentation | [Details](https://docs.rs/utoipa) |
+
+---
+
 # Dependency policy (backend-specific)
 
 * Avoid adding crates without a clear justification.

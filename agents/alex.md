@@ -2,7 +2,7 @@
 description: Embedded Systems & Firmware Specialist (Rust). Expert in MCU, no_std, RTOS, and driver development. Focuses on hardware safety and resource constraints.
 mode: subagent
 temperature: 0.2
-maxSteps: 40
+maxSteps: 80
 permission:
   read:
     "*": allow

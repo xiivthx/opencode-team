@@ -2,7 +2,7 @@
 description: Technical Architect & Orchestrator. Interface-first, delegation-only. Writes code only for integration.
 mode: primary
 temperature: 0.2
-maxSteps: 30
+maxSteps: 100
 permission:
   read:
     "*": allow
@@ -30,7 +30,7 @@ permission:
     "sudo *": deny
     "cat *": deny
     "grep *": deny
-    "ls *": allow
+    "ls*": allow
     "pwd *": allow
     "find *": allow
     "head *": allow

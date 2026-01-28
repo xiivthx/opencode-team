@@ -2,7 +2,7 @@
 description: QA Lead & Rust SDET. Defines quality strategy and implements strict Rust tests. Enforces testing pyramid + quality gates.
 mode: subagent
 temperature: 0.2
-maxSteps: 40
+maxSteps: 80
 permission:
   read:
     "*": allow
@@ -30,10 +30,10 @@ permission:
     "git log*": allow
     "git show*": allow
     "cargo test*": allow
+    "cargo nextest*": allow
     "cargo check*": allow
     "cargo fmt*": allow
     "cargo clippy*": allow
-    "cargo nextest*": ask
     "cargo tarpaulin*": ask
     "cargo llvm-cov*": ask
     "cargo audit*": ask

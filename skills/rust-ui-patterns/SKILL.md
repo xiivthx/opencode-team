@@ -30,9 +30,13 @@ The UI must be **predictable** under failure:
 - clear recovery actions (retry, re-auth, edit input)
 
 ## Related skills (routing)
-- For tokens/classes/state styling rules: use skill({ name: "tailwind-design-system" }).
-- For cross-team design heuristics (complexity budget, coupling): use skill({ name: "engineering-principles" }).
-- For source-of-truth IDs and traceability: use skill({ name: "team-contract-ids" }).
+- For the backend API standards these patterns connect to: skill({ name: "rust-backend-standards" }).
+- For standard UI design tokens and layout rules: skill({ name: "tailwind-design-system" }).
+- For verifying UI state and accessibility: skill({ name: "qa-gates" }).
+
+## Recommended Crates (UI/Graphics)
+- **`dioxus`**: Fullstack web/desktop/mobile framework.
+- **`wgpu`**: WebGPU binding for high-performance graphics.
 
 ---
 

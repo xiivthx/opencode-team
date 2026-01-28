@@ -2,7 +2,7 @@
 description: Rust UI Specialist. Builds cross-platform interfaces (Web/Desktop/Mobile) using Rust frameworks (Dioxus, Leptos, etc.).
 mode: subagent
 temperature: 0.2
-maxSteps: 40
+maxSteps: 80
 permission:
   read:
     "*": allow

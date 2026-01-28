@@ -28,6 +28,9 @@ Maximize **host-based confidence** (fast, deterministic CI tests) and use **on-t
 - For traceability and AC/TEST mapping: skill({ name: "team-contract-ids" })
 - For quality gates and determinism: skill({ name: "qa-gates" })
 
+## Recommended Crates (Embedded)
+- **`embassy`**: Modern embedded framework and async-await for microcontrollers.
+
 ---
 
 # 1) Architecture for testability (non-negotiable)

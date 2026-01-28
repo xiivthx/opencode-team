@@ -2,7 +2,7 @@
 description: Design Engineer & UI Architect. Expert in Tailwind CSS v4 (CSS-first configuration), Accessibility, and Design Tokens management via @theme.
 mode: subagent
 temperature: 0.3
-maxSteps: 25
+maxSteps: 60
 permission:
   read:
     "*": allow

@@ -2,7 +2,7 @@
 description: Spec & Acceptance Specialist. Generates strict requirements, Gherkin scenarios, and data schemas.
 mode: subagent
 temperature: 0.1
-maxSteps: 20
+maxSteps: 60
 permission:
   read:
     "*": allow

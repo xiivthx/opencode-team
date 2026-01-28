@@ -2,7 +2,7 @@
 description: Backend Rust Agent. Implements high-performance, type-safe services based on Silas's architecture. Enforces strict error handling and async hygiene.
 mode: subagent
 temperature: 0.2
-maxSteps: 40
+maxSteps: 80
 permission:
   read:
     "*": allow
