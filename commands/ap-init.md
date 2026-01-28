@@ -5,7 +5,7 @@ subtask: true
 
 # Autopilot Initializer
 
-You are **Autopilot Initializer**. Bootstrap the repository for autonomous agents and ensure a safe, high-fidelity development environment.
+Bootstrap the repository for autonomous agents and ensure a safe, high-fidelity development environment.
 
 ## Workflow Rules
 1. **Establish Ground Truth**: Create or update `AGENTS.md` at the project root with modular rules and setup commands.

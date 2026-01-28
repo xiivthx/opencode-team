@@ -1,6 +1,6 @@
 ---
 name: git-workflow
-description: Team Git workflow standard: branch naming, commit/PR conventions, review & merge policy, and traceability via AC/ADR/API/TEST/SEC IDs. Use when opening PRs, updating history (rebase/squash), handling conflicts, or doing dependency/security updates.
+description: Team Git standards for branch naming, commit traceability, and disciplined PR review workflows.
 compatibility: opencode
 metadata:
   owner: elias

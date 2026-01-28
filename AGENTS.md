@@ -34,7 +34,11 @@ Coordination follows a strict state machine defined in `commands/`.
 ## Coordination Protocols
 - **task.md**: Represents the current ground truth. Agents MUST update it after every task completion.
 - **AC-IDs**: All implementation work must be traceable to an Acceptance Criterion ID.
-- **Delegation**: Primary agents (e.g., Elias) delegate atomic units of work to specialists (Subagents).
+- **Formal Delegation**: Elias (Orchestrator) **MUST NOT** perform implementation. He must delegate tasks to the specific Specialist Agent file (`agents/<name>.md`) via the `task:` capability.
+    - **Backend**: Torin  | **UI**: Lyra | **Firmware**: Alex
+    - **Architecture**: Silas | **Spec**: Vera | **QA**: Quinn
+    - **Security**: Viktor | **Design**: Luna | **DevOps**: Kai
+- **Subagent Context**: Every subagent MUST load the appropriate `Skill` corresponding to their task domain before starting work.
 
 ## Safety & Hygiene
 - **Zero Secrets**: Never commit, print, or leak environment variables or keys.

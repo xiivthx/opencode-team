@@ -1,6 +1,6 @@
 ---
 name: security-supply-chain
-description: Supply-chain security playbook for Rust dependencies: vet new crates and updates, run RustSec audits, enforce license/source/duplicate policies, and record SEC-xxx decisions with severity gates. Use when adding/updating deps, reviewing PRs, or configuring CI security checks.
+description: Safety protocol for dependency vetting, advisory audits, and supply-chain policy enforcement.
 compatibility: opencode
 metadata:
   owner: viktor

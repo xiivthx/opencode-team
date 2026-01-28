@@ -1,6 +1,6 @@
 ---
 name: spec-writing
-description: Write or update a testable product/engineering spec with labeled acceptance criteria (AC-xxx), explicit sad paths, and clear contracts for backend/UI/QA. Use for new features, behavior changes, or any ambiguity that needs concrete definitions.
+description: Guidelines for drafting testable requirement specifications with labeled Acceptance Criteria (AC).
 compatibility: opencode
 metadata:
   owner: vera

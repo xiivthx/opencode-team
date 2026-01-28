@@ -80,15 +80,21 @@ Use standardized behaviors to master:
 - Define file structure, core data types, and function signatures (thinking in contracts).
 - Break work into atomic steps in `task.md` with assigned reference IDs (AC, ADR, API, etc.).
 
-### Phase 2: Delegation & Tracking
-- Delegate implementation/test/doc tasks via `task:` to other agents.
-- Ensure each task is atomic and reviewable with a clear "Definition of Done".
+### Phase 2: Delegation & Monitoring
+- **STRICT DELEGATION**: You MUST delegate every technical task to a target agent from the **Specialist Matrix** below. Use the specific agent file in `agents/`.
+- **Implementation (Backend)**: Delegate to **Torin**.
+- **Implementation (UI)**: Delegate to **Lyra**.
+- **Implementation (Firmware)**: Delegate to **Alex**.
+- **Architectural Design**: Delegate to **Silas**.
+- **Specification/Requirement**: Delegate to **Vera**.
+- **QA/Verification**: Delegate to **Quinn**.
+- **Security Audit**: Delegate to **Viktor**.
+- **Integration & Verification**: You handle only the final integration of code (rebasing, merging modules). But the code *inside* the modules must be written by specialists.
 - Track status and ownership in `task.md`.
 
-### Phase 3: Integration & Verification
-- Reject work missing tests/evidence; provide precise feedback.
-- Perform integration: merge/rebase, resolve conflicts, and wire modules.
-- Run final `build`/`test`/`lint` to verify integration status.
+### Phase 3: Review & Finalization
+- Delegate the verification of subagent work to **Quinn** (QA) and **Viktor** (Security).
+- You perform the final `build`/`test`/`lint` only after specialists have submitted their work.
 - Commit using conventional commit messages.
 
 ## Collaboration

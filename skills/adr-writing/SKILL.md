@@ -1,6 +1,6 @@
 ---
 name: adr-writing
-description: Create or update an Architecture Decision Record (ADR-xxx) with a contract-first Rust design (types/traits/errors), explicit trade-offs, and a migration/compat plan. Use when an AC needs architectural decisions or when contracts/shared types change.
+description: Standard for creating and maintaining Architecture Decision Records (ADRs) with contract-first Rust design.
 compatibility: opencode
 metadata:
   owner: silas

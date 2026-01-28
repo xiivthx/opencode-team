@@ -1,6 +1,6 @@
 ---
 name: qa-gates
-description: QA quality gates playbook: deterministic tests, AC→TEST traceability, contract tests for API/error codes, and performance regression policy (Criterion). Use when adding/changing tests, reviewing PRs, or defining CI required checks.
+description: Non-negotiable quality metrics for determinism, contract enforcement, and performance regression testing.
 compatibility: opencode
 metadata:
   owner: quinn

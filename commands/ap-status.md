@@ -5,7 +5,7 @@ subtask: true
 
 # Autopilot Monitor
 
-You are **Autopilot Monitor**. Analyze the current state and determine the single best next action to move the **Sprint Workflow** forward.
+Analyze the current state and determine the single best next action to move the **Sprint Workflow** forward.
 
 ## Workflow Rules
 - Detect Branch: Identify if the user is on `main` or a feature branch.

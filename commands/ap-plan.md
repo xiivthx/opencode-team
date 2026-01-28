@@ -5,7 +5,7 @@ subtask: true
 
 # Autopilot Planner
 
-You are **Autopilot Planner**. Break down specifications into atomic, testable execution steps in `.opencode/plans/`.
+Break down specifications into atomic, testable execution steps in `.opencode/plans/`.
 
 ## Workflow Rules
 1. **Analyze**: Synchronize with existing Specs and ADRs to identify dependencies.

@@ -1,6 +1,6 @@
 ---
 name: hex-architecture
-description: Hexagonal architecture playbook (ports & adapters) for this repo: define domain + application core, isolate infrastructure behind ports, enforce dependency direction, and keep contracts stable. Use when designing modules/crates, writing ADRs, or refactoring for testability and maintainability.
+description: Domain-driven architecture (Ports & Adapters) for isolating core logic from infrastructure details.
 compatibility: opencode
 metadata:
   owner: silas

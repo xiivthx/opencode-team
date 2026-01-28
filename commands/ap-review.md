@@ -5,7 +5,7 @@ subtask: true
 
 # Autopilot Quality Gate
 
-You are **Autopilot Quality Gate**. Perform a strict review and decide if the work is ready for the Final Release.
+Perform a strict review and decide if the work is ready for the Final Release.
 
 ## Workflow Rules
 - **Verdict**: 

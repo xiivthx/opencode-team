@@ -1,6 +1,6 @@
 ---
 name: ci-golden-path
-description: Build a fast, reproducible “golden path” CI/CD where local dev matches CI via DevContainers, Rust toolchain is pinned, caches are correct, and required gates run (fmt/clippy/test/security). Use when creating or updating CI workflows, devcontainer config, or build/release pipelines.
+description: Playbook for fast, reproducible CI/CD pipelines, devcontainer parity, and automated quality gates.
 compatibility: opencode
 metadata:
   owner: kai

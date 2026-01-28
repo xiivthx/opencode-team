@@ -1,6 +1,6 @@
 ---
 name: engineering-principles
-description: Practical engineering principles for this repo: keep designs simple, enforce clear boundaries, minimize coupling, prefer explicit contracts, and manage complexity budgets. Use during design/review (specs, ADRs, PRs) to catch over-engineering, leaky abstractions, and maintainability risks.
+description: Core decision heuristics for simplicity, decoupled architecture, and maintainable code boundaries.
 compatibility: opencode
 metadata:
   owner: elias

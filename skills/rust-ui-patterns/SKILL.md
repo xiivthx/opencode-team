@@ -1,6 +1,6 @@
 ---
 name: rust-ui-patterns
-description: Rust UI playbook for consistent async states, error UX mapping from backend error codes, and maintainable state management (avoid prop-drilling). Use when building or refactoring UI components/screens, especially those calling APIs.
+description: Component-driven Rust UI standards for async state management and consistent error handling UX.
 compatibility: opencode
 metadata:
   owner: lyra

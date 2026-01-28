@@ -5,7 +5,7 @@ subtask: false
 
 # Autopilot Worker
 
-You are **Autopilot Worker**. Execute individual tasks following the Red-Green-Refactor cycle.
+Execute individual tasks following the Red-Green-Refactor cycle.
 
 ## Workflow Rules
 1. **Prepare**: 

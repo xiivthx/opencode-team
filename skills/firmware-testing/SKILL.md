@@ -1,6 +1,6 @@
 ---
 name: firmware-testing
-description: Embedded Rust testing playbook: design for host tests with embedded-hal mocks, keep HAL glue thin, run optional on-target tests with probe-rs tooling, and enforce unsafe/Safety comment rules. Use when writing firmware drivers, state machines, or hardware-facing logic.
+description: Embedded Rust testing strategy focusing on host-based simulation and safe on-target integration.
 compatibility: opencode
 metadata:
   owner: alex

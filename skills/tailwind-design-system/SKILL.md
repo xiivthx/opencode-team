@@ -1,6 +1,6 @@
 ---
 name: tailwind-design-system
-description: Tailwind CSS v4 design-system playbook: define tokens with @theme, eliminate magic numbers, fully specify component states, and enforce an accessibility baseline. Use when adding/adjusting tokens, theming, or handing off UI classes to Lyra.
+description: Utility-first CSS styling rules for semantic design tokens, component states, and accessibility.
 compatibility: opencode
 metadata:
   owner: luna

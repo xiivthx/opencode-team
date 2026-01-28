@@ -1,6 +1,6 @@
 ---
 name: rust-backend-standards
-description: Backend Rust playbook for services/APIs: no panic in runtime, stable error-code contract, structured tracing (no println), DB/migration discipline, and compatibility rules. Use when implementing or changing endpoints, shared API types, or backend behavior.
+description: High-performance Rust patterns for APIs, stable error contracts, and structured observability.
 compatibility: opencode
 metadata:
   owner: torin

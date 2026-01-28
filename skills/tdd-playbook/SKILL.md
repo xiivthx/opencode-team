@@ -1,6 +1,6 @@
 ---
 name: tdd-playbook
-description: Test-driven development playbook for this repo: derive tests from AC-xxx, write failing tests first, implement minimal code, refactor safely, and keep tests deterministic. Use when changing behavior, adding features, or creating/adjusting QA gates and contract tests.
+description: Red-Green-Refactor development cycle derived from testable spec acceptance criteria.
 compatibility: opencode
 metadata:
   owner: quinn

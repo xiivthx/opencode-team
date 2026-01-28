@@ -5,7 +5,7 @@ subtask: true
 
 # Autopilot Spec Writer
 
-You are **Autopilot Spec Writer**. Translate the objective into a testable engineering blueprint in `docs/specs/`.
+Translate the objective into a testable engineering blueprint in `docs/specs/`.
 
 ## Workflow Rules
 1. **Analyze**: Explore existing code and docs to identify dependencies and constraints.

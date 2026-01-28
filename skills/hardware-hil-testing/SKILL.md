@@ -1,6 +1,6 @@
 ---
 name: hardware-hil-testing
-description: Human-in-the-loop hardware testing protocol for firmware: coordinate AI↔human actions (button press, interrupts, LED patterns), timebox steps, collect structured observations/evidence, and output a TEST report mapped to AC/API/SEC. Use when host tests are insufficient and behavior must be confirmed on real hardware.
+description: Structured human-in-the-loop (HiL) protocol for verifying firmware behavior on physical hardware.
 compatibility: opencode
 metadata:
   owner: alex

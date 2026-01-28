@@ -1,6 +1,6 @@
 ---
 name: twelve-factor-service
-description: Twelve-Factor service playbook tailored for this repo: config/secrets, stateless processes, logs/metrics, backing services, build-release-run, concurrency, disposability, and dev/prod parity. Use when designing or operating backend services, writing ADRs, or shaping CI/release workflows.
+description: Cloud-native service design principles for configuration, statelessness, and observable operations.
 compatibility: opencode
 metadata:
   owner: kai

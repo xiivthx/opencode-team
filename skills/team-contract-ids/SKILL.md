@@ -1,6 +1,6 @@
 ---
 name: team-contract-ids
-description: Enforce cross-team reference IDs (AC/ADR/API/TEST/SEC) and a single mapping thread so Elias, Vera, Silas, Torin, Lyra, Quinn, Viktor stay in sync across specs, architecture, code, tests, and security notes.
+description: Traceability system (AC/ADR/API/TEST/SEC) for synchronizing project requirements and implementation.
 compatibility: opencode
 metadata:
   audience: squad
