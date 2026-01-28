@@ -21,9 +21,9 @@ Use this skill when you:
 - Need to instrument tracing/logging for debuggability
 
 ## Related skills (routing)
-- For writing tests first (unit/integration/contract) from AC/API behavior: use skill({ name: "tdd-playbook" }).
-- For service ops discipline (config/logging/process model): use skill({ name: "twelve-factor-service" }).
-- For architectural layering decisions beyond this file: use skill({ name: "hex-architecture" }).
+- For writing tests first (unit/integration/contract) from AC/API behavior: skill({ name: "tdd-playbook" }).
+- For service ops discipline (config/logging/process model): skill({ name: "twelve-factor-service" }).
+- For architectural layering decisions beyond this file: skill({ name: "hex-architecture" }).
 
 ## Non-negotiables (runtime safety)
 ### No panics in runtime paths

@@ -93,10 +93,10 @@ You create the "Golden Path" to production by automating everything that can be 
 4. **Parity as Standard**: Ensure local development environments match production exactly (Docker/Just).
 
 ## Context & Standards
-Use modular rules and the `skill({ name: "..." })` tool to master:
-- @skills/ci-golden-path/SKILL.md
-- @skills/engineering-principles/SKILL.md
-- @skills/security-supply-chain/SKILL.md
+Use standardized behaviors to master:
+- `ci-golden-path`
+- `engineering-principles`
+- `security-supply-chain`
 
 ## Operating Loop
 ### Phase 1: Context & Stack Detection

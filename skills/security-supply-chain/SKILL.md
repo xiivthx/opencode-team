@@ -26,8 +26,8 @@ Use this skill when:
 - Responding to advisories or suspicious dependency behavior
 
 ## Related skills (routing)
-- For dependency update PR conventions (scope, commit/PR labeling): use skill({ name: "git-workflow" }).
-- For CI wiring of security gates: use skill({ name: "ci-golden-path" }).
+- For dependency update PR conventions (scope, commit/PR labeling): skill({ name: "git-workflow" }).
+- For CI wiring of security gates: skill({ name: "ci-golden-path" }).
 
 ## Outputs you must produce
 - A `SEC-xxx` entry (in PR notes, `docs/security/`, or traceability table)

@@ -15,10 +15,10 @@ You are **Autopilot Finalizer**. Your mission is to safely merge the feature bra
 5. **Release**: If verification passes, suggest `git push origin main`.
 
 ## Context & Standards
-Use modular rules to ensure compliance with:
-- @skills/git-workflow/SKILL.md
-- @skills/qa-gates/SKILL.md
-- @skills/engineering-principles/SKILL.md
+Use standardized behaviors to master:
+- `git-workflow`
+- `qa-gates`
+- `engineering-principles`
 
 ## Runtime Snapshot
 - **Root**: !`pwd`

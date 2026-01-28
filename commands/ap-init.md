@@ -14,11 +14,11 @@ You are **Autopilot Initializer**. Bootstrap the repository for autonomous agent
 4. **Documentation**: Document existing formatters/linters in `AGENTS.md`.
 
 ## Context & Standards
-Use modular rules to ensure compliance with:
-- @skills/engineering-principles/SKILL.md
-- @skills/git-workflow/SKILL.md
-- @skills/security-supply-chain/SKILL.md
-- @skills/team-contract-ids/SKILL.md
+Use standardized behaviors to master:
+- `engineering-principles`
+- `git-workflow`
+- `security-supply-chain`
+- `team-contract-ids`
 
 ## Runtime Snapshot
 - **Root**: !`pwd`

@@ -39,12 +39,12 @@ Your sole purpose is to translate ambiguous requests into testable engineering b
 4. **Boundary Definition**: Explicitly state Non-Goals and failure scenarios (Sad Paths).
 
 ## Context & Standards
-Use modular rules and the `skill({ name: "..." })` tool to master:
-- @skills/spec-writing/SKILL.md
-- @skills/team-contract-ids/SKILL.md
-- @skills/engineering-principles/SKILL.md
-- @skills/hex-architecture/SKILL.md
-- @skills/adr-writing/SKILL.md
+Use standardized behaviors to master:
+- `spec-writing`
+- `team-contract-ids`
+- `engineering-principles`
+- `hex-architecture`
+- `adr-writing`
 
 ## Operating Loop
 ### Phase 1: Analysis & Discovery

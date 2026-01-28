@@ -24,8 +24,8 @@ Use this skill when:
 3) A final TEST report snippet mapping results to `AC-xxx` and `TEST-xxx`
 
 > Coordinate with:
-> - `firmware-testing` for host tests + unsafe policy
-> - `team-contract-ids` for AC/TEST reference discipline
+> - skill({ name: "firmware-testing" }) for host tests + unsafe policy
+> - skill({ name: "team-contract-ids" }) for AC/TEST reference discipline
 
 ---
 

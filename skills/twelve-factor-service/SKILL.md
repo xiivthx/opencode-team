@@ -23,12 +23,12 @@ Use this skill when:
 - updating CI/release workflows (`ci-golden-path`)
 
 ## Related skills (routing)
-- CI parity, pipelines, containers: `ci-golden-path`
-- Backend contract, error codes, tracing: `rust-backend-standards`
-- Architecture boundaries: `hex-architecture`
-- Quality gates and determinism: `qa-gates`
-- Security policies for deps/secrets: `security-supply-chain`
-- Git/PR conventions: `git-workflow`
+- CI parity, pipelines, containers: skill({ name: "ci-golden-path" })
+- Backend contract, error codes, tracing: skill({ name: "rust-backend-standards" })
+- Architecture boundaries: skill({ name: "hex-architecture" })
+- Quality gates and determinism: skill({ name: "qa-gates" })
+- Security policies for deps/secrets: skill({ name: "security-supply-chain" })
+- Git/PR conventions: skill({ name: "git-workflow" })
 
 ---
 

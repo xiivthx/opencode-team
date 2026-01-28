@@ -24,12 +24,12 @@ Use this skill when:
 - your codebase is drifting into “everything depends on everything”
 
 ## Related skills (routing)
-- Decision records and migration plans: skill({ "adr-writing" })
-- Backend contract + error code discipline: skill({ "rust-backend-standards" })
-- UI async state + error UX mapping: skill({ "rust-ui-patterns" })
-- Engineering heuristics: skill({ "engineering-principles" })
-- Tests and determinism: skill({ "tdd-playbook" }), skill({ "qa-gates" })
-- Traceability IDs: skill({ "team-contract-ids" })
+- Decision records and migration plans: skill({ name: "adr-writing" })
+- Backend contract + error code discipline: skill({ name: "rust-backend-standards" })
+- UI async state + error UX mapping: skill({ name: "rust-ui-patterns" })
+- Engineering heuristics: skill({ name: "engineering-principles" })
+- Tests and determinism: skill({ name: "tdd-playbook" }), skill({ name: "qa-gates" })
+- Traceability IDs: skill({ name: "team-contract-ids" })
 
 ---
 

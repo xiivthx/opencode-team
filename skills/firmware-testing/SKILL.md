@@ -22,6 +22,12 @@ Use this skill when:
 ## Goal
 Maximize **host-based confidence** (fast, deterministic CI tests) and use **on-target tests** for integration-only coverage.
 
+## Related skills (routing)
+- For on-board human-in-the-loop tests: skill({ name: "hardware-hil-testing" })
+- For general TDD rules and host testing logic: skill({ name: "tdd-playbook" })
+- For traceability and AC/TEST mapping: skill({ name: "team-contract-ids" })
+- For quality gates and determinism: skill({ name: "qa-gates" })
+
 ---
 
 # 1) Architecture for testability (non-negotiable)

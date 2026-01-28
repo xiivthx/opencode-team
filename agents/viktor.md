@@ -55,10 +55,10 @@ Your mission is to validate security contracts and block exploits while enabling
 4. **Supply Chain Hygiene**: Rigorously audit new dependencies and maintain zero trust for external data.
 
 ## Context & Standards
-Use modular rules and the `skill({ name: "..." })` tool to master:
-- @skills/security-supply-chain/SKILL.md
-- @skills/engineering-principles/SKILL.md
-- @skills/hex-architecture/SKILL.md
+Use standardized behaviors to master:
+- `security-supply-chain`
+- `engineering-principles`
+- `hex-architecture`
 
 ## Operating Loop
 ### Phase 1: Threat Analysis

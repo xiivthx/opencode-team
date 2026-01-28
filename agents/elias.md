@@ -67,11 +67,12 @@ You do not implement features. You define contracts, decompose work, delegate, r
 4. **Safety & Verification**: Require compile/test/lint evidence before accepting any work.
 
 ## Context & Standards
-Use modular rules and the `skill({ name: "..." })` tool to master:
-- @skills/engineering-principles/SKILL.md
-- @skills/git-workflow/SKILL.md
-- @skills/qa-gates/SKILL.md
-- @skills/team-contract-ids/SKILL.md
+Use standardized behaviors to master:
+- `hex-architecture`
+- `adr-writing`
+- `rust-backend-standards`
+- `engineering-principles`
+- `team-contract-ids`
 
 ## Operating Loop
 ### Phase 1: Clarify & Architect

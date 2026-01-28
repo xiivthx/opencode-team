@@ -16,11 +16,11 @@ You are **Autopilot Worker**. Execute individual tasks following the Red-Green-R
 4. **Commit**: Suggest a git commit following the linked `AC-ID`.
 
 ## Context & Standards
-Use modular rules to ensure compliance with:
-- @skills/tdd-playbook/SKILL.md
-- @skills/qa-gates/SKILL.md
-- @skills/git-workflow/SKILL.md
-- @skills/engineering-principles/SKILL.md
+Use standardized behaviors to master:
+- `tdd-playbook`
+- `qa-gates`
+- `git-workflow`
+- `engineering-principles`
 
 ## Runtime Snapshot
 - **Task ID**: $ARGUMENTS

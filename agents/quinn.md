@@ -60,12 +60,12 @@ You ensure the system is correct by verification, trusting no code without deter
 4. **Deterministic Testing**: Tests must pass 100/100 times; no sleep or flakiness allowed.
 
 ## Context & Standards
-Use modular rules and the `skill({ name: "..." })` tool to master:
-- @skills/tdd-playbook/SKILL.md
-- @skills/qa-gates/SKILL.md
-- @skills/firmware-testing/SKILL.md
-- @skills/engineering-principles/SKILL.md
-- @skills/team-contract-ids/SKILL.md
+Use standardized behaviors to master:
+- `tdd-playbook`
+- `qa-gates`
+- `firmware-testing`
+- `engineering-principles`
+- `team-contract-ids`
 
 ## Operating Loop
 ### Phase 1: Strategy & Discovery

@@ -2,28 +2,28 @@
 
 This document serves as the **Single Source of Truth** for the Autopilot squad. It defines the standards, safety protocols, and coordination logic for the entire repository.
 
-## Modular Rules (@skills)
-Standard rules should be loaded as-needed via the `skill({ name: "..." })` tool.
+## Modular Rules (Skills)
+Standardized behaviors are loaded via the `skill({ name: "..." })` tool. Documentation for specific standards should be referenced by their skill name.
 
 ### Core Engineering
-- @skills/engineering-principles/SKILL.md (Code Quality & Mentality)
-- @skills/git-workflow/SKILL.md (Branching/Commit Standards)
-- @skills/tdd-playbook/SKILL.md (Red-Green-Refactor)
-- @skills/qa-gates/SKILL.md (Verification Requirements)
+- `engineering-principles`: Code Quality & Mentality
+- `git-workflow`: Branching/Commit Standards
+- `tdd-playbook`: Red-Green-Refactor
+- `qa-gates`: Verification Requirements
 
 ### Architecture & Domain
-- @skills/hex-architecture/SKILL.md (Backend Structure)
-- @skills/rust-backend-standards/SKILL.md (Production Rust)
-- @skills/rust-ui-patterns/SKILL.md (Performant UI)
-- @skills/tailwind-design-system/SKILL.md (Atomic CSS)
+- `hex-architecture`: Backend Structure
+- `rust-backend-standards`: Production Rust
+- `rust-ui-patterns`: Performant UI
+- `tailwind-design-system`: Atomic CSS
 
 ### Management & Security
-- @skills/team-contract-ids/SKILL.md (Reference & Traceability)
-- @skills/adr-writing/SKILL.md (Decision Logs)
-- @skills/security-supply-chain/SKILL.md (Safe Dependencies)
+- `team-contract-ids`: Reference & Traceability
+- `adr-writing`: Decision Logs
+- `security-supply-chain`: Safe Dependencies
 
 ## Sprint Workflow (Hard Gates)
-Coordination follows a strict state machine defined in `@[commands]`.
+Coordination follows a strict state machine defined in `commands/`.
 
 1. **Spec (/ap-spec)**: MUST define unique AC-IDs (e.g., `AC-01`). Ambiguity results in a BLOCK.
 2. **Plan (/ap-plan)**: MUST break work into atomic tasks (T01...). MUST link tasks to AC-IDs.
@@ -34,7 +34,7 @@ Coordination follows a strict state machine defined in `@[commands]`.
 ## Coordination Protocols
 - **task.md**: Represents the current ground truth. Agents MUST update it after every task completion.
 - **AC-IDs**: All implementation work must be traceable to an Acceptance Criterion ID.
-- **Delegation**: High-level agents (Elias, Silas) delegate atomic units of work to specialists (Torin, Lyra, Quinn).
+- **Delegation**: Primary agents (e.g., Elias) delegate atomic units of work to specialists (Subagents).
 
 ## Safety & Hygiene
 - **Zero Secrets**: Never commit, print, or leak environment variables or keys.

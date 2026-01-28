@@ -2,21 +2,37 @@
 
 A squad-based autonomous development system built on the **Sprint Workflow State Machine**. This system orchestrates specialized agents (Architecture, Backend, UI, Security, QA) to deliver high-fidelity features with strict engineering discipline.
 
-## 🚀 Workflow
+## 🏗 Architecture
 
-The system operates in a deterministic loop. Each command analyzes the current state (via Git and Filesystem) and suggests the optimal next step.
+OpenCode Autopilot is a modular system composed of three core layers:
+
+1.  **Agents**: Specialists with distinct personalities and permissions.
+2.  **Commands**: Custom prompts that drive the workflow state machine.
+3.  **Skills**: Reusable instruction modules loaded on-demand.
+
+### Workflow State Machine
+
+The system operates in a deterministic loop. Each command analyzes the current state (via Git and Filesystem) and suggest the optimal next step.
 
 ```mermaid
-graph LR
-    Status --> Spec
-    Spec --> Plan
-    Plan --> Task
-    Task --> Review
-    Review --> Release
+graph TD
+    User["User Request"] --> Status["/ap-status"]
+    Status --> Spec["/ap-spec"]
+    Spec --> Plan["/ap-plan"]
+    Plan --> Task["/ap-task"]
+    Task --> Review["/ap-review"]
+    Review --> Release["/ap-release"]
     Release --> Status
+    
+    subgraph "Capabilities"
+    Agents["@Agents"] --- Skills["@Skills"]
+    end
+    
+    Status -.-> Agents
+    Task -.-> Skills
 ```
 
-1.  **`/ap auto <goal>`**: **The "Set & Forget" Mode**. Autonomous full sprint.
+1.  **`/ap magik <goal>`**: **The "Magik" Mode**. Autonomous full sprint.
 2.  **`/ap status`**: Audit current state (branch, pending tasks, blockers).
 2.  **`/ap spec <goal>`**: Define requirements in `docs/specs/` with unique AC-IDs.
 3.  **`/ap plan <AC-ID>`**: Generate an atomic task list in `.opencode/plans/`.

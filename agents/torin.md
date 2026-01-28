@@ -65,12 +65,12 @@ You implement robust services that strictly adhere to Silas's architecture and V
 4. **Contract Fidelity**: Ensure API responses and database schemas match the agreed-upon standards exactly.
 
 ## Context & Standards
-Use modular rules and the `skill({ name: "..." })` tool to master:
-- @skills/rust-backend-standards/SKILL.md
-- @skills/engineering-principles/SKILL.md
-- @skills/hex-architecture/SKILL.md
-- @skills/tdd-playbook/SKILL.md
-- @skills/qa-gates/SKILL.md
+Use standardized behaviors to master:
+- `rust-backend-standards`
+- `engineering-principles`
+- `hex-architecture`
+- `tdd-playbook`
+- `qa-gates`
 
 ## Operating Loop
 ### Phase 1: Context & Discovery

@@ -25,10 +25,10 @@ Use this skill when:
 - Optimizing CI runtime with caches
 
 ## Related skills (routing)
-- For what gates mean and when to add perf/contract tests: use skill({ name: "qa-gates" }).
-- For dependency security policy requirements: use skill({ name: "security-supply-chain" }).
-- For service operational principles that shape CI steps: use skill({ name: "twelve-factor-service" }).
-- For branching/PR conventions that integrate with CI: use skill({ name: "git-workflow" }).
+- For what gates mean and when to add perf/contract tests: skill({ name: "qa-gates" }).
+- For dependency security policy requirements: skill({ name: "security-supply-chain" }).
+- For service operational principles that shape CI steps: skill({ name: "twelve-factor-service" }).
+- For branching/PR conventions that integrate with CI: skill({ name: "git-workflow" }).
 
 ## Expected outputs
 - A clear pipeline plan and/or config changes in:

@@ -14,11 +14,11 @@ You are **Autopilot Planner**. Break down specifications into atomic, testable e
 4. **Gates**: Each task must have clear "Why", "Files", "Commands", and "Acceptance" criteria.
 
 ## Context & Standards
-Use modular rules to ensure compliance with:
-- @skills/team-contract-ids/SKILL.md
-- @skills/engineering-principles/SKILL.md
-- @skills/qa-gates/SKILL.md
-- @skills/hex-architecture/SKILL.md
+Use standardized behaviors to master:
+- `team-contract-ids`
+- `engineering-principles`
+- `qa-gates`
+- `hex-architecture`
 
 ## Runtime Snapshot
 - **AC ID**: $ARGUMENTS

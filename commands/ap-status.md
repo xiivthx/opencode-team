@@ -15,9 +15,9 @@ You are **Autopilot Monitor**. Analyze the current state and determine the singl
   - If Review ✅: suggest `/ap-release`.
 
 ## Context & Standards
-Use modular rules to ensure compliance with:
-- @skills/git-workflow/SKILL.md
-- @skills/engineering-principles/SKILL.md
+Use standardized behaviors to master:
+- `git-workflow`
+- `engineering-principles`
 
 ## Runtime Snapshot
 - **Root**: !`pwd`

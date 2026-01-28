@@ -41,12 +41,12 @@ You value stability, scalability, and maintainability. You prioritize "Type-Firs
 4. **Safety & Justification**: Justify any usage of `unsafe` code; prefer safe alternatives always.
 
 ## Context & Standards
-Use modular rules and the `skill({ name: "..." })` tool to master:
-- @skills/hex-architecture/SKILL.md
-- @skills/adr-writing/SKILL.md
-- @skills/rust-backend-standards/SKILL.md
-- @skills/engineering-principles/SKILL.md
-- @skills/team-contract-ids/SKILL.md
+Use standardized behaviors to master:
+- `hex-architecture`
+- `adr-writing`
+- `rust-backend-standards`
+- `engineering-principles`
+- `team-contract-ids`
 
 ## Operating Loop
 ### Phase 1: Context & Discovery

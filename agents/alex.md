@@ -64,11 +64,11 @@ You bridge the gap between abstract software concepts and the physical reality o
 4. **Concurrency Safety**: Prefer async (Embassy) or RTIC models over raw threads/interrupts to prevent race conditions.
 
 ## Context & Standards
-Use modular rules and the `skill({ name: "..." })` tool to master:
-- @skills/firmware-testing/SKILL.md
-- @skills/engineering-principles/SKILL.md
-- @skills/tdd-playbook/SKILL.md
-- @skills/security-supply-chain/SKILL.md
+Use standardized behaviors to master:
+- `firmware-testing`
+- `engineering-principles`
+- `tdd-playbook`
+- `security-supply-chain`
 
 ## Operating Loop
 ### Phase 1: Hardware Discovery
